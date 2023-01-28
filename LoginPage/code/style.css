@@ -1,0 +1,166 @@
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body */
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* container main */
+
+.login-container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    height: 35rem;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 15px;
+    position: relative;
+}
+
+.login-container-main::before{
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    z-index: -1;
+    transform: rotate(-5deg);
+}
+
+
+/* header card */
+.login-header-card{
+    margin-top: 2rem;
+}
+
+.login-header-card h2{
+    font-size: 30px;
+    color: #212529;
+}
+
+
+.login-header-card p{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+/* form card */
+.login-form-card{
+    margin-top: 2rem;
+}
+
+.form-item{
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+
+.form-item .material-symbols-outlined{
+    margin-right: 8px;
+    margin-top: 5px;
+    opacity: 0.6;
+}
+
+
+.form-item .formInput{
+    border-radius: 5px;
+    padding: 10px;
+    width: 15rem;
+    height: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+
+}
+
+.formInput::placeholder{
+    font-size: 15px;
+}
+
+.formForgot{
+    display: flex;
+    justify-content: right;
+    margin-right: 16px;
+    margin-top: 20px;
+    
+}
+
+.formForgot a{
+    text-decoration: none;
+    color: linear-gradient(to right, #7e67ff, #d632ff);
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+
+.formForgot a:hover{
+    color: #007bff;
+}
+
+
+
+.formBtn{
+    margin-top: 3rem;
+    background: #fff;
+    padding: 15px;
+    width: 10rem;
+    margin-left: 3.8rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.formBtn a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.formBtn:hover{
+    background: #7e67ff;
+}
+
+
+
+.formAccount{
+    display: flex;
+    color: #212529;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.formAccount a{
+    text-decoration: none;
+    color: linear-gradient(to right, #7e67ff, #d632ff);
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.formAccount a:hover{
+    color: #007bff;
+}
